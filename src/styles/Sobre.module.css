@@ -1,0 +1,118 @@
+.sobre {
+  display: flex;
+  height: 597px;
+  align-items: center;
+
+  background: linear-gradient(180deg, #2D3E51 0%, rgba(45, 62, 81, 0) 100%);
+}
+
+.conteudo {
+  width: 100vmax;
+  height: 59.4639866%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  margin: 0 5%;
+}
+
+.image {
+  position: relative;
+  width: 40.64885496%;
+  max-width: 532.5px;
+
+  filter: drop-shadow(6px 4px 15px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  row-gap: 20px;
+
+  width: 39.96148701%;
+  max-width: 469px;
+  height: auto;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Product Sans Regular";
+  src: local("ProductSans"),
+    url("../fonts/ProductSans/ProductSans-Regular.ttf") format("truetype");
+}
+
+.title {
+  font-family: 'Product Sans Regular';
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  margin: 0;
+}
+
+.linha p:before{
+  content: "";
+  display: block;
+  width: 70px;
+  border: 3px solid;
+  border-radius: 3px;
+  background: #FFFFFF;
+  margin-bottom:20px;
+}
+
+@font-face {
+  font-family: "Product Sans Black";
+  src: local("ProductSans"),
+    url("../fonts/ProductSans/ProductSans-Black.ttf") format("truetype");
+}
+
+.subtitle {
+  font-family: 'Product Sans Black';
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: left;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Product Sans Light";
+  src: local("ProductSans"),
+    url("../fonts/ProductSans/ProductSans-Light.ttf") format("truetype");
+}
+
+.text {
+  height: auto;
+
+  font-family: 'Product Sans Light';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+  margin: 0;
+}
+
+@media only screen and (max-width: 940px) {
+  .conteudo {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .texts {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .sobre {
+    padding-top: 30px;
+  }
+}

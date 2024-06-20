@@ -1,0 +1,106 @@
+.organizadores {
+    width: 95%;
+}
+
+.grid6 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5%;
+    row-gap: 1.5%;
+    
+}
+
+.externo {
+    background: #4078BC;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    height: fit-content;
+    padding: 13px 10px;
+    z-index: 0;
+}
+
+.interno::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+.interno::-webkit-scrollbar-track {
+    background: #a9a996; 
+    border-radius: 0 15px 15px 0
+}
+
+/* Handle */
+.interno::-webkit-scrollbar-thumb {
+    background: #F3BC18; 
+    border-radius: 0 15px 15px 0;
+}
+
+/* Handle on hover */
+.interno::-webkit-scrollbar-thumb:hover {
+    background: #d9a300; 
+    border-radius: 0 15px 15px 0;
+}
+
+.interno {
+    z-index: 1;
+    background: #FFFFFF;
+    border-radius: 15px 5px 5px 15px;
+    width: 38vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+.grid4 .interno {
+    height: 30vh;
+}
+
+.participanteNome {
+    font-family: 'Product Sans Black';
+    padding: 1.5% 5%;
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.participanteConteudo {
+    padding: 0 5%;
+    padding-bottom: 1.5%;
+    font-family: 'Product Sans Light';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@media (max-width: 1500px) {
+    .interno {
+        width: 35vw;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .interno {
+        width: 20vw;
+    }
+
+    .organizadores {
+        margin: 50px 0;
+        height: auto;
+    }
+
+    .grid6 {
+        grid-template-columns: auto;
+    }
+    
+    .interno {
+        width: 70vw;
+    }
+}

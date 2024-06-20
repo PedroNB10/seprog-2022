@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Product Sans Medium";
+    src: local("ProductSans"),
+    url("../fonts/ProductSans/ProductSans-Medium.ttf") format("truetype");
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 0;
+    width: 329.43px;
+    height: auto;
+    background: #F3BC18;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.btn:hover {
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 1.5);
+    transform: translateY(-3px);
+}
+
+.btnImg {
+    width: 9%;
+    height: auto;
+}
+
+.btnText {
+    width: 189px;
+    height: auto;
+
+    font-family: 'Product Sans Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25.47px;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+@media (max-width: 400px) {
+    .btn {
+        width: auto;
+        padding: 16px 10px;
+        width: 250px;
+    }
+
+    .btnText {
+        font-size: 16px;
+    }
+
+}

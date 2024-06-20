@@ -1,0 +1,137 @@
+.localizacao {
+  display: flex;
+  height: 920px;
+
+  background: linear-gradient(180deg, #345D8F 44.06%, #2D3E51 100%);
+
+  color: #FFFFFF;
+  font-style: normal;
+  margin-bottom: 60px;
+}
+
+.conteudo {
+  width: 100vmax;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.conteudo li {
+  padding-top: 1.5%;
+}
+
+@font-face {
+  font-family: "Product Sans Black";
+  src: local("ProductSans"),
+    url("../fonts/ProductSans/ProductSans-Black.ttf") format("truetype");
+}
+
+.title {
+  width: 353px;
+  height: 41px;
+  margin: 2% auto 2% auto;
+
+  font-family: 'Product Sans Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 41px;
+
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.map {
+  width: 81.25%;
+  height: 414px;
+
+  border: 3px solid #F3BC18;
+  filter: drop-shadow(4px 6px 15px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+}
+
+.img {
+  height: 81px;
+  width: 91px;
+}
+
+ul {
+  gap: 10%;
+}
+
+.infos {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  width: 553px;
+  height: 183px;
+  
+  text-align: center;
+  font-style: normal;
+}
+
+.infosTitle {
+  font-family: 'Product Sans Black';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 41px;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Product Sans Medium";
+  src: local("ProductSans"),
+    url("../fonts/ProductSans/ProductSans-Medium.ttf") format("truetype");
+}
+
+.infosAdressUnifei {
+  font-family: 'Product Sans Medium';
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Product Sans Light";
+  src: local("ProductSans"),
+    url("../fonts/ProductSans/ProductSans-Light.ttf") format("truetype");
+}
+
+.infosAdressPlace {
+  font-family: 'Product Sans Light';
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 25px;
+  margin: 0;
+}
+
+.infosAdressCity {
+  font-family: 'Product Sans Light';
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 25px;
+  margin: 0;
+}
+
+
+@media (max-width: 400px) {
+  .title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .localizacao {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 940px) {
+  .localizacao {
+    padding-top: 0px;
+  }
+}

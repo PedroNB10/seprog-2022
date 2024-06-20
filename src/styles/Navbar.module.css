@@ -1,0 +1,151 @@
+.navbarContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0;
+
+    position: fixed;
+    z-index: 999;
+    height: 7.27vh;
+    left: 0px;
+    top: 0px;
+
+    background: #2D3E51;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+    overflow: hidden;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    
+    margin: 0 12% 0 7.1%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarConteudo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 8% 0 ;
+}
+
+.navLogo {
+    align-self: center;
+    scale: 88%;
+    margin: 1vh 0 0 0;
+    text-align: center;
+}
+
+
+.logo {
+    /* Logo */
+    max-height: 60px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+.navMenu {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    height: 48px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+@font-face {
+    font-family: "Assistant";
+    src: local("Assistant"),
+      url("../fonts/Assistant/static/Assistant-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+
+.navItem {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    height: 48px;
+    
+
+    /* Inside auto layout */
+    flex: none;
+    flex-grow: 0;
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 28px;
+    text-align: right;
+    color: #FFFFFF;
+    ;
+}
+
+.navItem:hover {
+    color: #F3BC18;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1330px) {
+    .navbarContainer {
+        height: 70px;
+    }
+    .navbar {
+        margin: 0 8%;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 680px){
+
+    
+    .navLogo{
+        transition: .3s;
+    }
+    .navLogo:hover {
+    scale: 100%;
+    }
+}
+
+@media (max-width: 660px) {
+    .navbarContainer {
+        height: auto;
+    }
+
+    .navbar {
+        margin: 0;
+        overflow: hidden;
+    }
+    .navbarConteudo {
+        width: 100vw;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .navLogo {
+        margin-top: 10px;
+    }
+
+    .navMenu {
+        align-self: center;
+    }
+}

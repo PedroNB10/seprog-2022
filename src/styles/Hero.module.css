@@ -1,0 +1,166 @@
+.hero {
+  height: 688px;
+  left: 0px;
+  margin-top: 50px;
+  display: flex;
+
+  background: linear-gradient(180deg, #345D8F 42.4%, rgba(64, 120, 188, 0) 100%);
+}
+
+.conteudo {
+  width: 100vmax;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 12.3vw;
+  gap: 21%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 550px;
+  max-width: 469px;
+  height: auto;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.link {
+  color: #FFFFFF;
+}
+
+.link:hover {
+  color: #F3BC18;
+}
+
+.textIntro {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  row-gap: 20px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  color: #FFFFFF;
+  font-style: normal;
+  text-align: left;
+}
+
+@font-face {
+  font-family: "Product Sans Black";
+  src: local("ProductSans"),
+    url("../fonts/ProductSans/ProductSans-Black.ttf") format("truetype");
+}
+
+.textTitle {
+  width: 100%;
+  height: auto;
+  margin: 0;
+
+  font-family: 'Product Sans Black';
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 41px;
+  display: flex;
+
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@font-face {
+  font-family: "Product Sans Light";
+  src: local("ProductSans"),
+    url("../fonts/ProductSans/ProductSans-Light.ttf") format("truetype");
+}
+
+.text {
+  height: auto;
+  margin: 0;
+
+  font-family: 'Product Sans Light';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.blockgroups {
+  width: 40.82291667%;
+  max-width: 587.85px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+@media only screen and (max-width: 1321px) {
+  .conteudo {
+    margin: 0 8%;
+  }
+
+  .intro {
+    width: 40.54112461%;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .hero {
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+
+  .conteudo {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .intro {
+    width: 500px;
+  }
+
+  .textIntro {
+    text-align: center;
+    align-items: center;
+  }
+
+  .textTitle {
+    display: block;
+  }
+
+  .link {
+    align-self: center;
+  }
+
+  .blockgroups {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .intro {
+    width: auto;
+  }
+
+  .blockgroups {
+    width: 100%;
+  }
+}

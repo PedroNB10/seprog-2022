@@ -1,0 +1,187 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  height: 320px;
+
+  background: #2D3E51;
+  border: 1px solid #234A79;
+
+  color: #FFFFFF;
+  font-style: normal;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+.envolvidos {
+  display: flex;
+  height: 254px;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.unifei {
+  width: 250px;
+  height: 193.75px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 0 0 0;
+  margin: 0;
+}
+
+.unifei img {
+  width: 100%;
+}
+
+.seprog {
+  text-align: center;
+}
+
+.logoSeprog {
+  padding: 21px 0 0 0;
+  width: 110.45px;
+  height: 110.45px;
+}
+
+@font-face {
+  font-family: "Product Sans Black";
+  src: local("ProductSans"),
+    url("../fonts/ProductSans/ProductSans-Black.ttf") format("truetype");
+}
+
+.textSeprog {
+  font-family: 'Product Sans Black';
+  font-weight: 900;
+  font-size: 39.5312px;
+  line-height: 48px;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.textYear {
+  font-family: 'Product Sans Black';
+  font-weight: 900;
+  font-size: 24.4163px;
+  line-height: 30px;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Product Sans Light";
+  src: local("ProductSans"),
+    url("../fonts/ProductSans/ProductSans-Light.ttf") format("truetype");
+}
+
+.textCopyright {
+  font-family: 'Product Sans Light';
+  font-weight: 300;
+  font-size: 15.2971px;
+  line-height: 19px;
+  padding-top: 9px;
+  margin: 0;
+}
+
+.developers {
+  width: 250px;
+  height: 106.06px;
+  text-align: start;
+  padding: 43px 0 0 0;
+  margin: 0;
+}
+
+.textTitle {
+  font-family: 'Product Sans Black';
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  text-shadow: 0px 2.32536px 5.81341px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.textParticipantes {
+  font-family: 'Product Sans Light';
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 25px;
+  padding-top: 23px;
+}
+
+.textParticipantes p {
+  margin: 0;
+}
+
+.copyright {
+  height: 54px;
+  background: #2D3E51;
+  box-shadow: 0px -3.3px 8.25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 4px 0 8px 0;
+}
+
+.img {
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .envolvidos {
+    flex-direction: row;
+  }
+
+  .unifei {
+    width: 200px;
+  }
+
+  .unifei img {
+    padding-top: 10px;
+  }
+
+  .developers {
+    width: 200px;
+  }
+
+  .textTitle {
+    font-size: 28px;
+  }
+
+  .textParticipantes {
+    padding-top: 0;
+  }
+
+  .textParticipantes p {
+    font-size: 18px;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .unifei {
+    scale: 0%;
+    width: 0;
+    visibility: hidden;
+  }
+
+  .seprog {
+    height: 250px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
+  .developers {
+    scale: 0%;
+    width: 0;
+    visibility: hidden;
+  }
+}
